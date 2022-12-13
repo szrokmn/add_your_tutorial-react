@@ -7,7 +7,7 @@ const Home = () => {
 
   const [tutorials, setTutorials] = useState([]);
 
-  const url = "https://tutorials-api-cw.herokuapp.com/api/tutorials";
+  const url = "https://axios-example-cw.herokuapp.com/api/tutorials";
 
   const getTutorials = async() => {
     const { data } = await axios(url);
@@ -21,7 +21,7 @@ const Home = () => {
  
   return (
     <>
-      <AddTutorial />
+      <AddTutorial tutor = {tutorials}/>
       <TutorialList />
     </>
   );

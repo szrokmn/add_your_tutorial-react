@@ -1,7 +1,7 @@
 import { FaEdit } from "react-icons/fa";
 import { AiFillDelete } from "react-icons/ai";
 
-const TutorialList = () => {
+const TutorialList = ({tutor}) => {
   const tutorials = [
     {
       id: 1,
@@ -29,7 +29,7 @@ const TutorialList = () => {
           </tr>
         </thead>
         <tbody>
-          {tutorials?.map((item) => {
+          {tutor?.map((item) => {
             const { id, title, description } = item;
             return (
               <tr key={id}>
