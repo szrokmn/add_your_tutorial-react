@@ -9,6 +9,7 @@ const Home = () => {
 
   const url = "https://axios-example-cw.herokuapp.com/api/tutorials";
 
+  // CRUD: (GET-READ)
   const getTutorials = async() => {
    try {
     const { data } = await axios(url);
